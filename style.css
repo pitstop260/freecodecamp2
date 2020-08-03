@@ -1,0 +1,85 @@
+body {
+    background-image: url("images/fcc2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+}
+#title {
+    
+}
+#transparency {
+    background: rgba(2, 57, 107, 0.82);
+    overflow: hidden;
+    height: 100%;
+    z-index: 2;
+    margin: -8px;
+}
+#survey-form {
+    text-align: left;
+}
+#transparency2 {
+    background: rgba(12, 20, 69, 0.7);;
+    line-height: 2;
+    padding: 2rem;
+    margin-bottom: 100px;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    border-radius: 4px;
+}
+#for_input {
+    border-radius: 5px;
+    width: 640px;
+    height: 35px;
+    border: none;
+    text-indent: 10px;
+}
+#description {
+    font-style: italic;
+}
+#role {
+    border-radius: 5px;
+    width: 640px;
+    height: 35px;
+    border: none;
+    text-indent: 10px;
+}
+#feature {
+    border-radius: 5px;
+    width: 640px;
+    height: 35px;
+    border: none;
+    text-indent: 10px;
+}
+textarea {
+    width: 636px;
+    border: none;
+    text-indent: 10px;
+}
+textarea:focus {
+    border-color: green;
+}
+#button {
+    border-radius: 2px;
+    width: 640px;
+    height: 35px;
+    border: none;
+    text-indent: 10px;
+    font-size: 17px; 
+    color: white;
+    background-color: sandybrown;
+}
+input:focus {
+    outline: none;
+    border-color: pink;
+    border-width: solid 10px;
+    box-shadow: 0 0 10px pink;
+} 
+select:focus {
+    outline: none;
+    border-color: pink;
+    border-width: solid 10px;
+    box-shadow: 0 0 10px pink;
+}
