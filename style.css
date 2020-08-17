@@ -1,85 +1,126 @@
 body {
-    background-image: url("images/fcc2.jpg");
+    background-image: url('images/theater.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: center;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.3em;
+    background-position: center center;
+    background-attachment: fixed;
 }
 #title {
-    
-}
-#transparency {
-    background: rgba(2, 57, 107, 0.82);
-    overflow: hidden;
-    height: 100%;
-    z-index: 2;
-    margin: -8px;
-}
-#survey-form {
-    text-align: left;
-}
-#transparency2 {
-    background: rgba(12, 20, 69, 0.7);;
-    line-height: 2;
-    padding: 2rem;
-    margin-bottom: 100px;
-    margin-left: 20rem;
-    margin-right: 20rem;
-    border-radius: 4px;
-}
-#for_input {
-    border-radius: 5px;
-    width: 640px;
-    height: 35px;
-    border: none;
-    text-indent: 10px;
+    text-align: center;
+    color: #FCF2D8;
 }
 #description {
-    font-style: italic;
+    text-align: center;
+    color: #FCF2D8;
 }
-#role {
-    border-radius: 5px;
-    width: 640px;
-    height: 35px;
-    border: none;
-    text-indent: 10px;
+.layer {
+    background-color: rgb(255, 99, 71, 0.8);
+    border-radius: 50px;
+    float: left;
+    position: relative;
+    left: 25%;  
 }
-#feature {
-    border-radius: 5px;
-    width: 640px;
-    height: 35px;
-    border: none;
-    text-indent: 10px;
+#survey-form {
+    text-align: start;
+    width: 50vw;
 }
-textarea {
-    width: 636px;
-    border: none;
-    text-indent: 10px;
+.form {
+    padding-left: 40px;
+    padding-top: 30px;
+    font-size: 1.3rem;
 }
-textarea:focus {
-    border-color: green;
-}
-#button {
-    border-radius: 2px;
-    width: 640px;
+input[type=text], select, textarea{
+    max-width: 44vw;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  input[type=email]{
+    max-width: 44vw;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  input[type=number]{
+    max-width: 44vw;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  #button {
+      padding-bottom: 10px;
+  }
+#submit {
+    border-radius: 4px;
+    width: 44vw;
     height: 35px;
     border: none;
     text-indent: 10px;
     font-size: 17px; 
     color: white;
     background-color: sandybrown;
+    cursor: pointer;
 }
-input:focus {
-    outline: none;
-    border-color: pink;
-    border-width: solid 10px;
-    box-shadow: 0 0 10px pink;
-} 
-select:focus {
-    outline: none;
-    border-color: pink;
-    border-width: solid 10px;
-    box-shadow: 0 0 10px pink;
+@media (max-width: 960px){
+    .layer {
+        background-color: rgb(255, 99, 71, 0.8);
+        border-radius: 50px;
+        float: left;
+        position: relative;
+        left: 20%;  
+    }
+}
+@media (max-width: 800px){
+    .layer {
+        background-color: rgb(255, 99, 71, 0.8);
+        border-radius: 50px;
+        float: left;
+        position: relative;
+        left: 15%;  
+    }
+}
+@media (max-width: 730px){
+    .layer {
+        background-color: rgb(255, 99, 71, 0.8);
+        border-radius: 50px;
+        float: left;
+        position: relative;
+        left: 10%;  
+    }
+}
+@media (max-width: 640px){
+    .layer {
+        background-color: rgb(255, 99, 71, 0.8);
+        border-radius: 50px;
+        float: left;
+        position: relative;
+        left: 5%;  
+    }
+}
+@media (max-width: 580px){
+    .layer {
+        background-color: rgb(255, 99, 71, 0.8);
+        border-radius: 50px;
+        float: left;
+        position: relative;
+        left: 2%;  
+    }
+}
+@media (max-width: 480px){
+    .layer {
+        background-color: rgb(255, 99, 71, 0.8);
+        border-radius: 50px;
+        float: left;
+        position: relative;
+        left: 0%;  
+    }
 }
