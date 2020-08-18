@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" media="(max-width: 980px) and (max-width: 800px)and (max-width: 730px) and (max-width: 640px) and (max-width: 580px) and (max-width: 480px)" href="style.css">
+    <link rel="stylesheet" media="(max-width: 980px) and (max-width: 800px)and (max-width: 730px) and (max-width: 640px) and (max-width: 580px) and (max-width: 540px) and (max-width: 480px)" href="style.css">
 </head>
 <body>
     <div class="layer">
@@ -15,93 +15,123 @@
         </p>
         <form action="message.html" id="survey-form">
             <div class="form">
-                <label for="name" id="name-label"><b>Name</b></label>
-                <br>
-                <input type="text"  id="name" placeholder="Enter your name" required>
+                <div>
+                    <label for="name" id="name-label"><b>Name</b></label>
+                </div>
+                <div>
+                    <input type="text"  id="name" placeholder="Enter your name" required>
+                </div>
             </div>
             <div class="form">
-                <label for="email" id="email-label"><b>Email</b></label>
-                <br>
-                <input type="email"  id="email" placeholder="Enter your email" required>
+                <div>
+                    <label for="email" id="email-label"><b>Email</b></label>
+                </div>
+                <div>
+                    <input type="email"  id="email" placeholder="Enter your email" required>
+                </div>
             </div>
             <div class="form">
-                <label for="number" id="number-label"><b>Age</b> (<i>Optional</i>)</label>
-                <br>
-                <input type="number"  id="number" placeholder="Age" min="1" max="100">
+                <div>
+                    <label for="number" id="number-label"><b>Age</b> (<i>Optional</i>)</label>
+                </div>
+                <div>
+                    <input type="number"  id="number" placeholder="Age" min="12" max="100">
+                </div>
             </div>
             <div class="form" id="dropdown">
-                <label for="character" id="character-label"><b>How much will you rate the act out of 5?</b></label>
-                <br>
-                <select name="character" id="character">
-                    <option value="" disabled selected>Select an option</option>
-                    <option value="one">1</option>
-                    <option value="two">2</option>
-                    <option value="three">3</option>
-                    <option value="four">4</option>
-                    <option value="five">5</option>
-                </select>
+                <div>
+                    <label for="character" id="character-label"><b>How much will you rate the act out of 5?</b></label>
+                </div>
+                <div>
+                    <select name="character" id="character">
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="one">1</option>
+                        <option value="two">2</option>
+                        <option value="three">3</option>
+                        <option value="four">4</option>
+                        <option value="five">5</option>
+                    </select>
+                </div>
             </div>
             <div class="form">
-                <label><b>Would you recommend the theatrical enactment to your friends?</b></label>
-                <br>
-                <input type="radio" id="definitely" name="recommendation" value="definitely">
-                <label for="definitely">Definitely</label>
-                <br>
-                <input type="radio" id="maybe" name="recommendation" value="maybe"  checked="checked">
-                <label for="maybe">Maybe</label>
-                <br>
-                <input type="radio" id="not_sure" name="recommendation" value="not_sure">
-                <label for="not_sure">Not sure</label>
+                <div>
+                    <label><b>Would you recommend the theatrical enactment to your friends?</b></label>
+                </div>
+                <div>
+                    <input type="radio" id="definitely" name="recommendation" value="definitely">
+                    <label for="definitely">Definitely</label>
+                </div>
+                <div>
+                    <input type="radio" id="maybe" name="recommendation" value="maybe"  checked="checked">
+                    <label for="maybe">Maybe</label>
+                </div>
+                <div>
+                    <input type="radio" id="not_sure" name="recommendation" value="not_sure">
+                    <label for="not_sure">Not sure</label>
+                </div>
             </div>
             <div class="form">
-                <label><b>What was your favorite scence of enactment?</b></label>
-                <br>
-                <select name="scenes" id="scences">
-                    <option value="" disabled selected>Select an option</option>
-                    <option value="A1_S1">Hamlet: Act 1, Scene 1 (Elsinore. A platform before the castle.)</option>
-                    <option value="A1_S2">Hamlet: Act 1, Scene 2  (Elsinore. A room of state in the castle.)</option>
-                    <option value="A1_S3">Hamlet: Act 1, Scene 3 (Elsinore. A room in the Polonius' house.)</option>
-                    <option value="A1_S4">Hamlet: Act 1, Scene 4 (Elsinore. A platform before Elsinore castle)</option>
-                    <option value="A1_S5">Hamlet: Act 1, Scene 5  (Elsinore. Another parrt of the platform before Elsinore castle)</option>
-                    <option value="A2_S1">Hamlet: Act 2, Scene 1 (Elsinore. A room in the Polonius' house.)</option>
-                    <option value="A2_S2">Hamlet: Act 2, Scene 2 (Elsinore. A room in Elsinore castle.)</option>
-                    <option value="A3_S1">Hamlet: Act 3, Scene 1 (Elsinore. A room in Elsinore castle.)</option>
-                    <option value="A3_S2">Hamlet: Act 3, Scene 2 (Elsinore. A hall in Elsinore castle.)</option>
-                    <option value="A3_S3">Hamlet: Act 3, Scene 3 (Elsinore. A room in Elsinore castle.)</option>
-                    <option value="A3_S4">Hamlet: Act 3, Scene 4 (Elsinore. The Queen's room in Elsinore castle.)</option>
-                    <option value="A4_S1">Hamlet: Act 4, Scene 1 (Elsinore. A room in Elsinore castle.)</option>
-                    <option value="A4_S2">Hamlet: Act 4, Scene 2 (Elsinore. Another room in Elsinore castle.)</option>
-                    <option value="A4_S3">Hamlet: Act 4, Scene 3 (Elsinore. Another room in Elsinore castle.)</option>
-                    <option value="A4_S4">Hamlet: Act 4, Scene 4 (Near Elsinore. A plain in Denmark.)</option>
-                    <option value="A4_S5">Hamlet: Act 4, Scene 5 (Elsinore. A room in Elsinore castle.)</option>
-                    <option value="A4_S6">Hamlet: Act 4, Scene 6 (Elsinore. Another room in Elsinore castle.)</option>
-                    <option value="A4_S7">Hamlet: Act 4, Scene 7 (Elsinore. Another room in Elsinore castle.)</option>
-                    <option value="A5_S1">Hamlet: Act 5, Scene 1 (Elsinore. A churchyard.)</option>
-                    <option value="A5_S2">Hamlet: Act 5, Scene 2 (Elsinore. A hall in Elsinore castle.)</option>
-                </select>
+                <div>
+                    <label><b>What was your favorite scence of enactment?</b></label>
+                </div>
+                <div>
+                    <select name="scenes" id="scences">
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="A1_S1">Hamlet: Act 1, Scene 1 (Elsinore. A platform before the castle.)</option>
+                        <option value="A1_S2">Hamlet: Act 1, Scene 2  (Elsinore. A room of state in the castle.)</option>
+                        <option value="A1_S3">Hamlet: Act 1, Scene 3 (Elsinore. A room in the Polonius' house.)</option>
+                        <option value="A1_S4">Hamlet: Act 1, Scene 4 (Elsinore. A platform before Elsinore castle)</option>
+                        <option value="A1_S5">Hamlet: Act 1, Scene 5  (Elsinore. Another parrt of the platform before Elsinore castle)</option>
+                        <option value="A2_S1">Hamlet: Act 2, Scene 1 (Elsinore. A room in the Polonius' house.)</option>
+                        <option value="A2_S2">Hamlet: Act 2, Scene 2 (Elsinore. A room in Elsinore castle.)</option>
+                        <option value="A3_S1">Hamlet: Act 3, Scene 1 (Elsinore. A room in Elsinore castle.)</option>
+                        <option value="A3_S2">Hamlet: Act 3, Scene 2 (Elsinore. A hall in Elsinore castle.)</option>
+                        <option value="A3_S3">Hamlet: Act 3, Scene 3 (Elsinore. A room in Elsinore castle.)</option>
+                        <option value="A3_S4">Hamlet: Act 3, Scene 4 (Elsinore. The Queen's room in Elsinore castle.)</option>
+                        <option value="A4_S1">Hamlet: Act 4, Scene 1 (Elsinore. A room in Elsinore castle.)</option>
+                        <option value="A4_S2">Hamlet: Act 4, Scene 2 (Elsinore. Another room in Elsinore castle.)</option>
+                        <option value="A4_S3">Hamlet: Act 4, Scene 3 (Elsinore. Another room in Elsinore castle.)</option>
+                        <option value="A4_S4">Hamlet: Act 4, Scene 4 (Near Elsinore. A plain in Denmark.)</option>
+                        <option value="A4_S5">Hamlet: Act 4, Scene 5 (Elsinore. A room in Elsinore castle.)</option>
+                        <option value="A4_S6">Hamlet: Act 4, Scene 6 (Elsinore. Another room in Elsinore castle.)</option>
+                        <option value="A4_S7">Hamlet: Act 4, Scene 7 (Elsinore. Another room in Elsinore castle.)</option>
+                        <option value="A5_S1">Hamlet: Act 5, Scene 1 (Elsinore. A churchyard.)</option>
+                        <option value="A5_S2">Hamlet: Act 5, Scene 2 (Elsinore. A hall in Elsinore castle.)</option>
+                    </select>
+                </div>
             </div>
             <div class="form">
-                <label><b>What would you like to see improved?</b> (<i>Check all that apply</i>)</label>
-                <br>
-                <input type="checkbox" id="lighting" name="improvement" value="lighting">
-                <label for="lighting">Lighting</label>
-                <br>
-                <input type="checkbox" id="costumes" name="improvement" value="costumes">
-                <label for="costumes">costumes</label>
-                <br>
-                <input type="checkbox" id="speakers" name="improvement" value="speakers">
-                <label for="speakers">Speakers</label>
-                <br>
-                <input type="checkbox" id="background" name="improvement" value="background">
-                <label for="background">Background-Art</label>
-                <br>
-                <input type="checkbox" id="seats" name="improvement" value="Seats">
-                <label for="seats">Seats</label>
+                <div>
+                    <label><b>What would you like to see improved?</b> (<i>Check all that apply</i>)</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="lighting" name="improvement" value="lighting">
+                    <label for="lighting">Lighting</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="costumes" name="improvement" value="costumes">
+                    <label for="costumes">costumes</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="speakers" name="improvement" value="speakers">
+                    <label for="speakers">Speakers</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="background" name="improvement" value="background">
+                    <label for="background">Background-Art</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="seats" name="improvement" value="Seats">
+                    <label for="seats">Seats</label>
+                </div>
             </div>
             <div class="form">
-                <b>Any comments or suggestions?</b>
-                <br>
-                <textarea name="comments" id="comments" cols="30" rows="8" placeholder="Enter your comment here..."></textarea>
+                <div>
+                    <b>Any comments or suggestions?</b>
+                </div>
+                <div>
+                    <textarea name="comments" id="comments" cols="30" rows="8" placeholder="Enter your comment here..."></textarea>
+                </div>
             </div>
             <div class="form" id="button">
                 <button id="submit">Submit</button>
