@@ -1,5 +1,5 @@
 body {
-    background-image: url('images/theater.jpg');
+    background-image: url('/home/akshay/Pictures/theater.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -70,6 +70,11 @@ input[type=text], select, textarea{
     background-color: sandybrown;
     cursor: pointer;
 }
+#submit:hover {
+    color: black;
+    background-color: goldenrod;
+    transition: 0.4s;
+}
 @media (max-width: 960px){
     .layer {
         background-color: rgb(255, 99, 71, 0.8);
@@ -113,6 +118,15 @@ input[type=text], select, textarea{
         float: left;
         position: relative;
         left: 2%;  
+    }
+}
+@media (max-width: 540px){
+    .layer {
+        background-color: rgb(255, 99, 71, 0.8);
+        border-radius: 50px;
+        float: left;
+        position: relative;
+        left: 0.3%;  
     }
 }
 @media (max-width: 480px){
